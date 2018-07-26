@@ -90,8 +90,9 @@
     "radix": true,
     "semicolon": [
       true,
-      "always"
+      "never"
     ],
+	"max-line-length": [    true,    120  ],
     "triple-equals": [
       true,
       "allow-null-check"

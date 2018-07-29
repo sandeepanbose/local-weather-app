@@ -11,7 +11,8 @@ export class CurrentWeatherComponent implements OnInit {
   constructor(private weatherService: WeatherService) { }
   private current: ICurrentWeather
   ngOnInit() {
-    this.weatherService.getCurrentWeather('Simla', 'IN')
-      .subscribe((data) => this.current = data)
+    this.weatherService
+      .getCurrentWeather('Simla', 'IN')
+      .subscribe(data => (this.current = data))
   }
 }

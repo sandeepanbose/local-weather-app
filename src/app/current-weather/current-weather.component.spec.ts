@@ -1,8 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { WeatherService } from '../weather.service';
-import { WeatherServiceFake } from '../weather.service.fake';
-import { CurrentWeatherComponent } from './current-weather.component';
-
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { WeatherService } from '../weather.service'
+import { WeatherServiceFake } from '../weather.service.fake'
+import { CurrentWeatherComponent } from './current-weather.component'
 
 describe('CurrentWeatherComponent', () => {
   let component: CurrentWeatherComponent

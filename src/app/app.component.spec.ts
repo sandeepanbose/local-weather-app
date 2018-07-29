@@ -1,8 +1,8 @@
-import { async, TestBed } from '@angular/core/testing';
-import { AppComponent } from './app.component';
-import { CurrentWeatherComponent } from './current-weather/current-weather.component';
-import { WeatherService } from './weather.service';
-import { WeatherServiceFake } from './weather.service.fake';
+import { async, TestBed } from '@angular/core/testing'
+import { AppComponent } from './app.component'
+import { CurrentWeatherComponent } from './current-weather/current-weather.component'
+import { WeatherService } from './weather.service'
+import { WeatherServiceFake } from './weather.service.fake'
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -24,8 +24,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent)
     fixture.detectChanges()
     const compiled = fixture.debugElement.nativeElement
-    expect(compiled.querySelector('h1').textContent).toContain(
-      'LocalCast Weather'
-    )
+    expect(compiled.querySelector('h1').textContent).toContain('LocalCast Weather')
   }))
 })

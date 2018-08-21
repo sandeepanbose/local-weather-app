@@ -8,15 +8,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from './material.module'
 import { FlexLayoutModule } from '@angular/flex-layout'
 import 'hammerjs'
+import { CitySearchComponent } from './city-search/city-search.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 @NgModule({
-  declarations: [AppComponent, CurrentWeatherComponent],
+  declarations: [AppComponent, CurrentWeatherComponent, CitySearchComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [WeatherService],
   bootstrap: [AppComponent],

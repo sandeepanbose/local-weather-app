@@ -3,11 +3,15 @@
     <div class="mat-title no-margin" fxFlex="66%">{{current.city}}, {{current.country}} </div>
     <div class="right mat-subheading-2 no-margin" fxFlex>{{current.date | date:'EEEE MMM d'}}</div>
   </div>
-  <div class="container" fxLayout="row">
-    <div fxFlex="66%">
+  <div class="container" fxLayout="row" fxLayoutAlign="center center">
+    <div fxFlex="55%">
       <img style="zoom: 175%" [src]='current.image'>
     </div>
-    <div class="right mat-display-3 no-margin" fxFlex>{{current.temperature | number: '1.0-0'}}℉</div>
+    <div fxFlex class="right no-margin">
+      <p class="mat-display-3" fxFlex>{{current.temperature | number: '1.0-0'}}
+        <span class="mat-display-1 unit">℉</span>
+      </p>
+    </div>
   </div>
   <div fxLayoutAlign="center" class="mat-caption">
     {{current.description}}

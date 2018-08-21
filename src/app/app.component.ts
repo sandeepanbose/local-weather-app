@@ -1,4 +1,6 @@
 import { Component } from '@angular/core'
+import { ICurrentWeather } from './interfaces'
+import { WeatherService } from './weather.service'
 
 @Component({
   selector: 'app-root',
@@ -21,7 +23,7 @@ import { Component } from '@angular/core'
           <mat-card-title><div class="mat-headline">Current Weather</div></mat-card-title>
         </mat-card-header>
         <mat-card-content>
-          <app-current-weather></app-current-weather>
+          <app-current-weather [current]="currentWeather"></app-current-weather>
         </mat-card-content>
       </mat-card>
     </div>
@@ -30,4 +32,6 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'local-weather-app'
+  currentWeather: ICurrentWeather
+  constructor(private weatherService: WeatherService) {}
 }
